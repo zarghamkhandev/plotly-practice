@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="bg-white chart-container mt-4">
+    <div class="row no-gutters h-100">
+      <div class="col-14 border-right h-100 p-4">
+        <div id="graph" #graph></div>
+        <div class="d-flex justify-content-center">
+          <ul class="pagination">
+            <li
+              [className]="current <= 0 ? 'page-item disabled' : 'page-item'"
+              (click)="prevChart()"
+            >
+              <a class="page-link" href="#">Previous</a>
+            </li>
+            <li
+              [className]="
+                current >= max - 1
+                  ? 'page-item disabled'
+                  : 'page-item'
+              "
+              (click)="nextChart()"
+            >
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-6">hi</div>
+    </div>
+  </div>
+</div>

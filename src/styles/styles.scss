@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+$grid-columns:   20;
+$theme-colors: (
+  "grey": #f5f6fa,
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.border-navbar {
+  border-bottom: 2px solid #e6e8f1;
+}
+
+.sidebar {
+  position: fixed;
+  height: calc(100vh - 60px);
+  border-right: 2px solid #e6e8f1;
+}
+
+.custom-border-right {
+    border-right: 5px solid #e6e8f1;
+}
+
+.chart-container {
+  width: 100%;
+  border-radius: 5px;
+  // box-shadow: -11px 9px 21px rgba(173,182,217,0.17);
+}
